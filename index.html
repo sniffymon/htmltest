@@ -3,6 +3,7 @@
 		<title>HTML TEST</title>
 		<link rel="stylesheet" href="stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 		* {
 			padding:0;
@@ -11,16 +12,20 @@
 		}
 
 		.header {
-			size:3000px;
+			display: table;
 			background-image: url("badmintonracketnet.png");
 			height: 83.5%;
+			max-height: 83.5%;
 			background-size: cover;
 			background-color: #cccccc;
 			padding: 50px 0 50px;
 		}
 
+		#headertext {
+			display:table-cell;
+			vertical-align:middle;
+		}
 		#headertext h1{
-			padding-top:300px;
 			font-size:50px;
 			text-align:center;
 			color: white;
@@ -82,8 +87,6 @@
 			width: 100%;
 			top:0;
 		}
-		
-
 		</style>
 	</head>
 <body>
