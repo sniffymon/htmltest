@@ -3,6 +3,7 @@
 		<title>HTML TEST</title>
 		<link rel="stylesheet" href="stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 		* {
@@ -11,7 +12,7 @@
 			margin:0;
 		}
 
-		.header {
+		.bigcont {
 			display: table;
 			background-image: url("badmintonracketnet.png");
 			height: 94.7%;
@@ -20,15 +21,38 @@
 			background-size: cover;
 			background-color: #cccccc;
 			padding: 50px 0 50px;
-		}
 
-		#headertext {
+			  /* parallax */
+    		background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+   		 	background-size: cover;
+			}
+
+		.bigcont2 {
+			display: table;
+			background-image: url("badmintongrass.png");
+			height: 94.7%;
+			width:100%;
+			
+			background-size: cover;
+			background-color: #cccccc;
+			padding: 50px 0 50px;
+
+			  /* parallax */
+    		background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+   		 	background-size: cover;
+			}
+
+		#bigconttext {
 			display:table-cell;
 			vertical-align:middle;
 			text-align:center;
 		}
 
-		#headertext h1{
+		#bigconttext h1{
 			font-size:50px;
 		display:inline-block;
 			color: white;
@@ -36,12 +60,28 @@
 			text-shadow: 2px 2px 10px #000000;
 		}
 
-		#headertext p {
+		#bigconttext p {
 			font-size:30px;
 			font-family:'IBM Plex Mono', Monospace;
 			color: white;
 		display:inline-block;
 			text-shadow: 2px 2px 5px #000000;
+		}
+
+		.breaker {
+			background-color:#000000;
+			size:30px;
+			padding: 100px 80px;
+		}
+
+		#breakertext {
+			text-align: center;
+		}
+
+		#breakertext p {
+			font-size: 60px;
+			font-family:'Roboto', sans-serif;
+			color:white;
 		}
 
 		#navbaritems {
@@ -71,7 +111,11 @@
 			display:inline-flex;
 			text-align:center;
 			font-weight:bold;
-			padding-right:10px;
+			
+		}
+
+		#navbaroptions a:hover {
+			background-color: #253220;
 		}
 
 		#login {
@@ -90,6 +134,25 @@
 			width: 100%;
 			top:0;
 		}
+
+		.btnsignup {
+			padding: 10px;
+			font-size: 20px;
+			border-radius:4px;
+			background-color:#d9534f;
+			text-align: center;
+			border: 1px solid transparent;
+
+		}
+
+		.btnsignup a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.btnsignup:hover {
+			background-color:#c9302c;
+		}
 		</style>
 	</head>
 <body>
@@ -104,31 +167,38 @@
 			<li>What We Do</li>
 		</ul>-->
 	</li>
-	<li id="navbaroptions"><a href="#" ><img id="login"	src="login.png" alt=""></a></li>
+	<li id="navbaroptions"><a href="#" >
+		<div style="width:50px; height:50px;">
+			<img id="login"	src="login.png" alt="">
+		</div>
+	</a>
+</li>
 </ul>
 <!-- NAVBAR END -->
 
-<div class="header">
-	<div id="headertext">
-	<h1 id="headertext">BadmintonGeek.</h1>
-	<hr id="linedec">
-	<p id="headertext">Mastering Badminton. One topic at a time.</p>
+<div class="bigcont">
+	<div id="bigconttext">
+	<h1>BadmintonGeek.</h1><br>
+	<p>Mastering Badminton. One topic at a time.</p>
+	</div>
 </div>
+
+<div class="breaker">
+	<div>
+		<div id="breakertext">
+			<p>More than just a forum and guide. Also a community.</p>
+		</div>
+	</div>
 </div>
 
-<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dui vitae nisl pellentesque tempus ut ut nibh. Quisque erat arcu, malesuada sit amet egestas eget, cursus in turpis. Sed tempus, tellus nec congue molestie, lacus libero mollis risus, sit amet faucibus orci turpis a arcu. Nulla interdum a lacus ut feugiat. Nulla congue dolor nec velit tincidunt sodales. Integer nec diam ut ante placerat auctor. Sed et semper nunc, sit amet sodales massa. Morbi eget lacinia odio. Nulla blandit lorem eu arcu molestie, rutrum dignissim diam elementum. In non laoreet quam. Suspendisse rhoncus et nisl non consequat. Vivamus at commodo diam, in fermentum nisl. Sed fringilla sit amet sapien in finibus. Curabitur rhoncus at nibh vel mollis. Quisque enim sem, lobortis eu quam quis, eleifend imperdiet ex. </p> <br><br>
+<div class="bigcont2">
+	<div id="bigconttext">
+		<p style="background-color:#3f3f3f;">Rookie or Master? Doesn't Matter. <br>
+		Join Us Now to Learn</p>
 
-<p>
-Praesent maximus nibh purus, pharetra scelerisque ante ornare in. Morbi aliquet in nunc vitae ultricies. Duis maximus, nulla sit amet lacinia mattis, purus ex semper metus, ut imperdiet neque orci ac lacus. Phasellus nisl diam, vulputate quis tempor sit amet, lobortis vitae urna. Etiam tortor mauris, cursus sit amet neque vel, tincidunt tempus odio. Donec dapibus purus a porttitor dapibus. Sed leo purus, sodales vitae efficitur eu, luctus vel lorem. Vestibulum tempor sapien sed arcu aliquet tempor. Cras finibus, urna ac pretium interdum, libero dui sagittis elit, suscipit efficitur sem dolor ac orci. Integer aliquet ante in elit condimentum maximus.</p><br><br>
-
-<p>
-Pellentesque diam neque, pretium sed tortor sed, feugiat vehicula magna. Donec sodales orci dignissim, ornare enim ut, facilisis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere facilisis elit, vel ultrices nisi fringilla id. Praesent eget feugiat erat, sed accumsan urna. Nullam dui turpis, viverra vel convallis ac, posuere nec lorem. Pellentesque eu bibendum purus, vitae feugiat mi. Nam eu arcu sollicitudin, sodales tellus eget, euismod lacus. Nunc at maximus sapien, sit amet ullamcorper magna. Sed nunc libero, fringilla non nisi varius, faucibus bibendum purus. Aenean id urna a nunc sollicitudin facilisis. Ut ante orci, facilisis a lobortis quis, rhoncus ac nibh.
-</p><br><br>
-
-<b>Aenean nisi magna, laoreet sed tempor ac, hendrerit ac nunc. Proin quis ipsum porttitor, facilisis mauris ac, convallis orci. Sed placerat malesuada mollis. Nunc porta condimentum odio et maximus. Nam pellentesque auctor imperdiet. In hac habitasse platea dictumst. Phasellus cursus ipsum ante, et posuere ante sagittis viverra. Aliquam sapien lacus, ultricies non placerat in, congue in turpis. Fusce tortor velit, volutpat et sem dignissim, vestibulum pellentesque tortor. Donec eu efficitur ipsum. Phasellus tincidunt semper auctor. Nulla maximus fringilla auctor. Donec vel felis sem. Proin dictum quam leo, a fermentum ligula fermentum vel. Aliquam condimentum elit ut gravida sodales.</b><br><br>
-
-<p>Duis vitae leo et nisl sollicitudin rhoncus. Curabitur sit amet eros eu augue lobortis imperdiet. Donec lobortis metus non nisl malesuada pretium. Quisque ut tellus efficitur, mollis purus ac, semper ligula. Quisque sit amet enim dolor. Maecenas porta bibendum lacus nec sodales. Quisque id sapien ac dui gravida posuere. Curabitur eget mattis turpis. Curabitur sed risus dignissim, porttitor justo vitae, consectetur purus. Vivamus ac dapibus nibh. Donec fringilla tempor ultrices. Quisque lobortis suscipit ultrices. Sed eu sem congue, tincidunt felis nec, egestas leo. Quisque laoreet semper eleifend. Cras mollis augue sit amet lacus tincidunt gravida.</p><br><br>
-
-<i>Everything here is just a dummy text to depict what the navbar is going to behave like, and the website's motions are then portrayed throught these texts. May this particular line of text be italicized.</i>-->
+		<br><br>
+		<button class="btnsignup"><a href="#">Sign Up</a></button>
+	</div>
+</div>
 </body>
 </html>
