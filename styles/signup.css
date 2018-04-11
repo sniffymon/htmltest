@@ -4,75 +4,102 @@
 			margin:0;
 		}
 
+		/* NAVBAR START */
 
-		#login {
-			width:25px;
-			padding-top:13px;
-		}
 
-		#navbaritems {
-			float:left;
-		}
+.navbar {
+    overflow: hidden;
+    background-color: #37474f;
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+}
 
-		#logo {
-			width:20px;
-			height:20px;
-		}
+.sticky {
+	position:fixed;
+	width:100%;
+}
 
-		#logoitem {
-			float:left;
-		}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-		#logoitem a {
-			display: inline-flex;
-			color: white;
-			text-align: center;
-			padding: 15px 17px;
-			text-decoration: none !important;
-			font-weight: bold;
-		}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
 
-		#navbaritems a {
-			display: inline-flex;
-			color: white;
-			text-align: center;
-			padding: 15px 17px;
-			text-decoration: none !important;
-			font-weight: bold;
-		}
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
 
-		#navbaritems a:hover {
-			background-color: #fff;
-			color:black;
-		}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #fff;
+    color: #000;
+    z-index:1;
+}
 
-		#navbaroptions {
-			float:right;
-			display:inline-flex;
-			text-align:center;
-			font-weight:bold;
-		}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-		#navbaroptions a:hover {
-			background-color: #253220;
-		}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-		.navbar {
-			background-color:#37474f;
-			overflow:hidden;
-			padding:0;
-			margin:0;
-			list-style-type: none;
-			position: -webkit-sticky; /*For Safari*/
-			position: sticky;
-			width: 100%;
-			top:0;
-		}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#logoimg {
+	width:20px;
+	height:20px;
+}
+
+#overlay:hover{
+	background-color:#37474f;
+}
+
+#navbar-func {
+	float:right;
+}
+
+#loginimg {
+	width:20px;
+	height:20px;
+}
+
+/* NAVBAR END */
 
 		.fullpage {
 			display:flex;
 			background-image: url("signupback.png");
-			height: 83.5%;
+			height: 100%;
 			width:100%; 
 			background-size: cover;
 			background-color: #cccccc;
@@ -115,7 +142,7 @@
 		}
 
 		#fullnametxt, #usernametxt, #passwordtxt, #emailtxt, #confpasstxt{
-			width:400px;
+			width:380px;
 			height:35px;
 			border-radius:5px;
 			font-size:120%;
@@ -142,13 +169,6 @@
 		#btnsignup:hover {
 			background-color: #253220;
 		}
-
-
-
-
-
-
-
 
 
 
@@ -211,23 +231,6 @@
 			background-color: #253220;
 		}
 
-/* The Close Button */
-.close {
-    /* Position it in the top right corner outside of the modal */
-    position: absolute;
-    right: 480px;
-    top: 200px; 
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
 
 /* Add Zoom Animation */
 .animate {

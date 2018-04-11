@@ -4,10 +4,103 @@
 			margin:0;
 		}
 
+
+		/* NAVBAR START */
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #37474f;
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+}
+
+.sticky {
+	position:fixed;
+	width:100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #fff;
+    color: #000;
+  	z-index:1;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#logoimg {
+	width:20px;
+	height:20px;
+}
+
+#overlay:hover{
+	background-color:#37474f;
+}
+
+#navbar-func {
+	float:right;
+}
+
+#loginimg {
+	width:20px;
+	height:20px;
+}
+
+/* NAVBAR END */
+
 		.bigcont {
 			display: table;
 			background-image: url("badmintonracketnet.png");
-			height: 94.7%;
+			height: 100%;
 			width:100%;
 			
 			background-size: cover;
@@ -24,7 +117,7 @@
 		.bigcont2 {
 			display: table;
 			background-image: url("badmintongrass.png");
-			height: 94.9%;
+			height: 100%;
 			width:100%;
 			
 			background-size: cover;
@@ -76,73 +169,10 @@
 			color:white;
 		}
 
-		#navbaritems {
-			float:left;
-		}
-
-		#logo {
-			width:20px;
-			height:20px;
-		}
-
-		#logoitem {
-			float:left;
-		}
-
-		#logoitem a {
-			display: inline-flex;
-			color: white;
-			text-align: center;
-			padding: 15px 17px;
-			text-decoration: none !important;
-			font-weight: bold;
-		}
-
-		#navbaritems a {
-			display: inline-flex;
-			color: white;
-			text-align: center;
-			padding: 15px 17px;
-			text-decoration: none !important;
-			font-weight: bold;
-		}
-
-		#navbaritems a:hover{
-			background-color: #fff;
-			color:black;
-		}
-
-		.selected {
-			background-color:#192021;
-		}
-
-		#navbaroptions {
-			float:right;
-			display:inline-flex;
-			text-align:center;
-			font-weight:bold;
-			
-		}
-
-		#navbaroptions a:hover {
-			background-color: #253220;
-		}
 
 		#login {
 			width:25px;
 			padding-top:13px;
-		}
-
-		.navbar {
-			background-color:#37474f;
-			overflow:hidden;
-			padding:0;
-			margin:0;
-			list-style-type: none;
-			position: -webkit-sticky; /*For Safari*/
-			position: sticky;
-			width: 100%;
-			top:0;
 		}
 
 		.btnsignup {
@@ -228,24 +258,6 @@
 			background-color: #253220;
 		}
 
-/* The Close Button */
-.close {
-    /* Position it in the top right corner outside of the modal */
-    position: absolute;
-    right: 480px;
-    top: 200px; 
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
 /* Add Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -278,3 +290,7 @@
 		margin-bottom:10px;
 		padding-left:10px;
 }
+
+
+
+
