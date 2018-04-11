@@ -1,16 +1,12 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css"	href="styles/index.css">
-		<title>BadmintonGeek</title>
+		<title>BadmintonGeek -  Sign Up</title>
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+		<link rel="stylesheet" href="styles/signup.css">
 	</head>
-
-
-<body>
-
+	<body>
 <!-- Form Float -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" 
@@ -47,10 +43,13 @@ class="close" title="Close Modal">&times;</span>
 
 
 
-	<!-- NAVBAR START -->
+
+
+
+			<!-- NAVBAR START -->
 <ul class="navbar">
-	<li id="logoitem"><a href="#"><img src="styles/testlogo.png" alt="logo" id="logo"></a></li>
-	<li id="navbaritems" class="selected"><a href="index.html">Home</a></li>
+	<li id="logoitem"><a href="index.html"><img src="styles/testlogo.png" alt="logo" id="logo"></a></li>
+	<li id="navbaritems"><a href="index.html">Home</a></li>
 	<li id="navbaritems">
 		<a href="#">About</a>
 		<!--<ul>
@@ -59,39 +58,51 @@ class="close" title="Close Modal">&times;</span>
 		</ul>-->
 	</li>
 	<li id="navbaroptions">
-		<a href="#" onclick="loginNow()" >
+		<a href="" onclick="loginNow()" >
 			<div style="width:50px; height:50px;">
-				<img id="login"	src="styles/login.png" alt="" >
+				<img id="login"	src="styles/login.png" alt="">
 			</div>
 		</a>
 </li>
 </ul>
 <!-- NAVBAR END -->
 
-<div class="bigcont">
-	<div id="bigconttext">
-	<h1>BadmintonGeek.</h1><br>
-	<p>Mastering Badminton. One topic at a time.</p>
+<div class="fullpage">
+	<div class="square">
+		<h1>Sign Up</h1>
+		<br>
+		<h4>Please fill in the following details.</h2>
+		<table class="formitem">
+			<tr>
+				<td>
+					<input type="text" id="fullnametxt" placeholder="Fullname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="usernametxt" placeholder="Username">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="Email" id="emailtxt" placeholder="Email">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="password" id="passwordtxt" placeholder="Password">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="password" id="confpasstxt" placeholder="Confirm Password">
+				</td>
+			</tr>		
+	</table><br>
+
+			<button id="btnsignup"><a href="">Sign Up</a></button>
 	</div>
 </div>
-
-<div class="breaker">
-	<div>
-		<div id="breakertext">
-			<p>More than just a forum and guide. Also a community.</p>
-		</div>
-	</div>
-</div>
-
-<div class="bigcont2">
-	<div id="bigconttext">
-		<img src="styles/testlogo.png" alt="logo" style="height:400px"> <br>
-		<p style="background-color:#3f3f3f;">Rookie or Master? Doesn't Matter. <br>
-		Join Us Now to Learn</p>
-
-		<br><br>
-		<button class="btnsignup"><a href="signup.html">Sign Up</a></button>
-	</div>
-</div>
-</body>
+	</body>
 </html>
