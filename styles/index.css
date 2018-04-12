@@ -199,7 +199,6 @@
 
 
 
-
 		/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -226,7 +225,7 @@
 		}
 
 		.squarefloat h1 {
-			background-color:#496069;
+		
 			border-top-left-radius:10px;
 			border-top-right-radius: 10px;
 			color:#fff;
@@ -237,16 +236,18 @@
 		.formitem {
 			margin:auto;
 			font-family:'IBM Plex Mono', Monospace;
-			padding-top:50px;
+			padding-top:10px;
+			padding-bottom:20px;
 		}
 
 		#btnlogin {
-			border-radius:2px;
+			border-radius:5px;
 			font-size:20px;
 			background-color:#496069;
 			padding:10px;
 			text-align:center;
 			border: 1px solid transparent;
+
 		}
 
 		#btnlogin a {
@@ -258,7 +259,7 @@
 			background-color: #253220;
 		}
 
-/* Add Zoom Animation */
+/* Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
@@ -276,7 +277,10 @@
 
 
 
-
+#loginlogo {
+	width:100px;
+	height:100px;
+}
 
 
 
@@ -290,7 +294,5 @@
 		margin-bottom:10px;
 		padding-left:10px;
 }
-
-
 
 
