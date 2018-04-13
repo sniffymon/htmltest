@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css"	href="styles/index.css">
+		<link rel="icon" href="Styles/favicon.ico" type="image/x-icon">
 		<title>BadmintonGeek</title>
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -21,7 +22,7 @@
 
   <!-- Form Content -->
 <div class="squarefloat animate">
-	<img id="loginlogo" src="styles/testlogo" alt="">
+	<img id="loginlogo" src="styles/testlogo.jpg" alt="">
 	
 		<table class="formitem">
 			<tr>
@@ -42,23 +43,39 @@
 
 </div>
 
-
-
-
-
 	<!-- NAVBAR START -->
 <div class="navbar sticky">
 	<a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
-  <a href="#home">Home</a>
+  <a href="index.html" class="selected">Home</a>
   <a href="#news">About</a>
   <div class="dropdown">
-    <button class="dropbtn">Browse &#9662;
+    <button class="dropbtn">Beginner &#9662;
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Beginner</a>
-      <a href="#">Intermediate</a>
-      <a href="#">Advanced</a>
+      <a href="#">Thingy 1<p style="float:right;">&#9657;</p></a>
+      <a href="#">Thingy 2<p style="float:right;">&#9657;</p></a>
+      <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Intermediate &#9662;
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Thingy 1<p style="float:right;">&#9657;</p></a>
+      <a href="#">Thingy 2<p style="float:right;">&#9657;</p></a>
+      <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Advanced &#9662;
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Thingy 1<p style="float:right;">&#9657;</p></a>
+      <a href="#">Thingy 2<p style="float:right;">&#9657;</p></a>
+      <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
   <a href="" id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
@@ -102,5 +119,8 @@ window.onclick = function(event) {
 		<button class="btnsignup"><a href="signup.html">Sign Up</a></button>
 	</div>
 </div>
+<footer class="footer">
+	<p id="footerright">&#9824;2018 - Badminton Geek</p>
+</footer>
 </body>
 </html>

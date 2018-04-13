@@ -1,17 +1,21 @@
 <html>
 	<head>
-		<title>BadmintonGeek -  Sign Up</title>
+		<link rel="stylesheet" type="text/css"	href="styles/template.css">
+		<title>BadmintonGeek</title>
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="styles/signup.css">
+		
 <script>
 	function loginPls() {
 	document.getElementById('id01').style.display='table'
 }
 </script>
 	</head>
-	<body>
+
+
+<body>
+
 <!-- Form Float -->
 <div id="id01" class="modal">
 
@@ -38,12 +42,10 @@
 
 </div>
 
-
-
 	<!-- NAVBAR START -->
 <div class="navbar sticky">
 	<a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
-  <a href="index.html">Home</a>
+  <a href="#home">Home</a>
   <a href="#news">About</a>
   <div class="dropdown">
     <button class="dropbtn">Beginner &#9662;
@@ -91,47 +93,14 @@ window.onclick = function(event) {
 }
 </script>
 <!-- LOGIN MODAL OUT END -->
+<!-- CONTENT HERE -->
 
 
 
-<div class="fullpage">
-	<div class="square">
-		<h1>Join BadmintonGeek Today</h1>
 
-		<table class="formitempage">
-			<tr>
-				<td>
-					<input type="text" id="fullnametxt" placeholder="Fullname">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="text" id="usernametxtpage" placeholder="Username">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="Email" id="emailtxt" placeholder="Email">
-				</td>
-			</tr>
 
-			<tr>
-				<td>
-					<input type="password" id="passwordtxtpage" placeholder="Password">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="password" id="confpasstxt" placeholder="Confirm Password">
-				</td>
-			</tr>		
-	</table><br>
-
-			<button id="btnsignup"><a href="">Sign Up</a></button>
-	</div>
-</div>
-	</body>
-	<footer class="footer">
+<footer class="footer">
 	<p id="footerright">&#9824;2018 - Badminton Geek</p>
 </footer>
+</body>
 </html>
