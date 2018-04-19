@@ -5,13 +5,8 @@
 		<title>BadmintonGeek</title>
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-<script>
-	function loginPls() {
-	document.getElementById('id01').style.display='table'
-}
-</script>
 	</head>
 
 
@@ -78,21 +73,11 @@
       <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
-  <a href="" id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
+  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
 </div>
 <!-- NAVBAR END -->
 <!-- LOGIN MODAL OUT START -->
-	<script type="text/javascript">
-// Get the modal
-var modal = document.getElementById('id01');
-
-// Click on modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+	
 <!-- LOGIN MODAL OUT END -->
 <div class="bigcont">
 	<div id="bigconttext">
@@ -119,6 +104,7 @@ window.onclick = function(event) {
 		<button class="btnsignup"><a href="signup.html">Sign Up</a></button>
 	</div>
 </div>
+	<script type="text/javascript" language="javascript" src="scripts.js"></script>
 <footer class="footer">
 	<p id="footerright">&#9824;2018 - Badminton Geek</p>
 </footer>
