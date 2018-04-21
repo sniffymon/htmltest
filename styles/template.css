@@ -207,3 +207,26 @@
 	padding-top:8px;
 	text-align:center;
 }
+
+
+
+
+.titlebreaker {
+	size:50px;
+	padding: 125px 100px 25px 100px;
+	margin:auto;
+
+}
+
+.clip-text {
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+background-size:cover;
+	background-position:center left;
+	background-image: url(newpic.png);
+
+	font-family: 'Noto Sans', sans-serif;
+	font-size:10vw;
+
+}
