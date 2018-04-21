@@ -27,6 +27,9 @@
     text-align: center;
     padding: 15px 17px;
     text-decoration: none;
+    transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
 }
 
 .dropdown {
@@ -220,7 +223,7 @@
 	padding: 60px 100px 25px 100px;
 	margin:auto;
 	background-color:#111111;
-	background-image: url(badmintongrass.png);
+	background-image: url(headerbadmintongrass.png);
 	background-position: bottom;
 }
 
@@ -240,19 +243,36 @@
 }
 
 
-#breakertext h1{
+#t2 {
 	text-align:center;
 	font-family: 'Noto Sans', sans-serif;
 	font-size:10vw;
 	line-height: 120px;
+
+ -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
   
 }
 
-#breakertext h4{
+#t1 {
 text-align:center;
 	font-family: 'Noto Sans', sans-serif;
 	font-size:5vw;
 
+
+ -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+	from  {opacity:0;}
+	to {opacity:1;}
 }
 
 .line {
