@@ -207,3 +207,56 @@
 	padding-top:8px;
 	text-align:center;
 }
+
+
+
+
+.titlebreaker {
+	size:50px;
+	padding: 60px 100px 25px 100px;
+	margin:auto;
+	background-color:#111111;
+	background-image: url(badmintongrass.png);
+	background-position: bottom;
+}
+
+
+.clip-text {
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+
+	background-position: right;
+	background-image: url(newpic.jpg);
+
+	font-family: 'Noto Sans', sans-serif;
+	font-size:10vw;
+
+
+}
+
+
+#breakertext h1{
+	text-align:center;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:10vw;
+	line-height: 120px;
+  
+}
+
+#breakertext h4{
+text-align:center;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:5vw;
+
+}
+
+.line {
+	background-color:#37474f;
+	height:10px;
+}
+
+.contentcontainer {
+	background-color:white;
+	height:70%;
+}
