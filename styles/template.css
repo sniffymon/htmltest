@@ -200,6 +200,10 @@
 	height:40px;
 	background-color:#37474f;
 	color:white;
+	bottom:0;
+	margin-bottom:0;
+	width:100%;
+
 }
 
 #footerright {
@@ -259,4 +263,5 @@ text-align:center;
 .contentcontainer {
 	background-color:white;
 	height:70%;
+	display:inline-block;
 }
