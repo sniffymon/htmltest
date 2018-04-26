@@ -323,6 +323,7 @@ body{
 	text-align:justify-all;
 	color:#1c1c1c;
 	display:inline-block;
+	line-height: 225%;
 }
 
 .centercontent ul{
@@ -332,4 +333,13 @@ body{
 	text-align:justify-all;
 	color:#1c1c1c;
 	display:inline-block;
+}
+
+.centercontent img{
+	width: 350px;
+	height: 350px;
+	display: block;
+	margin-left: 250px;
+	border: 1px solid #BBB;
+	border-radius: 2px;
 }
