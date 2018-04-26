@@ -1,0 +1,367 @@
+	* {
+			padding:0;
+			border:0;
+			margin:0;
+		}
+
+
+		/* NAVBAR START */
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(55, 71, 79, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+}
+
+.sticky {
+	position:fixed;
+	width:100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+    transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #fff;
+    color: #000;
+  	z-index:1;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    -webkit-position:fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#logoimg {
+	width:20px;
+	height:20px;
+}
+
+#overlay:hover{
+	background-color:#37474f;
+}
+
+#navbar-func {
+	float:right;
+}
+
+#loginimg {
+	width:20px;
+	height:20px;
+}
+
+/* NAVBAR END */
+
+
+		/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  	padding-top:17%;
+}
+
+	.squarefloat {
+			background-color:#fff;
+			width:400px;
+			height:300px;
+			margin: auto;
+			text-align:center;
+			align-items:middle;
+			border-radius: 10px;
+			font-size:200%;
+		}
+
+		.squarefloat h1 {
+		
+			border-top-left-radius:10px;
+			border-top-right-radius: 10px;
+			color:#fff;
+			font-family:'Roboto', sans-serif;
+			font-size:150%;
+		}
+
+		.formitem {
+			margin:auto;
+			font-family:'IBM Plex Mono', Monospace;
+			padding-top:10px;
+			padding-bottom:20px;
+		}
+
+		#btnlogin {
+			border-radius:5px;
+			font-size:20px;
+			background-color:#496069;
+			padding:10px;
+			text-align:center;
+			border: 1px solid transparent;
+
+		}
+
+		#btnlogin a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		#btnlogin:hover {
+			background-color: #253220;
+		}
+
+/* Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+#loginlogo {
+	width:100px;
+	height:100px;
+}
+
+
+
+#usernametxt, #passwordtxt {
+		width:350px;
+		height:35px;
+		border-radius:5px;
+		font-size:120%;
+		color:#686868;
+		border:1px solid #bdbdbd;
+		margin-bottom:10px;
+		padding-left:10px;
+}
+
+
+.footer {
+	height:40px;
+	background-color:#37474f;
+	color:white;
+	bottom:0;
+	margin-bottom:0;
+	width:100%;
+
+}
+
+#footerright {
+	font-family:'Roboto', sans-serif;
+	padding-top:8px;
+	text-align:center;
+}
+
+
+
+
+.titlebreaker {
+	size:50px;
+	padding: 60px 100px 25px 100px;
+	margin:auto;
+	background-color:#111111;
+	background-image: url(headerbadmintongrass.png);
+	background-position: bottom;
+}
+
+
+.clip-text {
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+
+	background-position: right;
+	background-image: url(newpic.jpg);
+
+	font-family: 'Noto Sans', sans-serif;
+	font-size:10vw;
+
+
+}
+
+
+#t2 {
+	text-align:center;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:10vw;
+	line-height: 150px;
+
+ -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+  
+}
+
+#t1 {
+text-align:center;
+	font-family: 'Noto Sans', sans-serif;
+	font-size:5vw;
+
+
+ -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+	from  {opacity:0;}
+	to {opacity:1;}
+}
+
+.line {
+	background-color:#37474f;
+	height:10px;
+}
+
+.contentcontainer {
+	background-color:white;
+	height:70%;
+	display:inline-block;
+}
+
+.centercontent{
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family:'Proxima Nova', sans-serif;
+	font-size: 18px;
+	line-height: 225%;
+}
+
+.centercontent h1{
+	font-family:'google fonts', sans-serif;
+	word-spacing: 6px;
+	margin-top:20px;
+}
+
+#table{
+	font-family: 'Calibri', sans-serif;
+	font-size: 16px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#table th{
+	padding: 10px;
+	background-color:#37474f;
+}
+
+
+.date{
+	text-align: right;
+	vertical-align: center;
+	color: white;
+	font-family: 'google fonts', sans-serif;
+	font-size: 16px;
+}
+
+.commentno{
+	text-align: left;
+	vertical-align: center;
+	color: white;
+	font-family: 'google fonts', sans-serif;
+	font-size: 16px;
+}
+
+.userid{
+	font-family: 'Verdana',sans-serif;
+	font-size: 22px;
+	padding: 20px 10px;
+	text-decoration: bold;
+	text-align: center;
+	word-spacing: 120%; 
+	width: 20%;
+	background-color: rgba(221,221,221,0.65);
+}
+
+.userid img{
+	height: 200px;
+	width: 200px;
+	border: 1px solid;
+	border-radius: 5px;
+}
+.comment{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	padding: 2px 12px;
+	margin-bottom: 30px;
+	text-align: left;
+	vertical-align: top;
+
+}
+
+.comment h2{
+	font-family: 'Verdana', sans-serif;
+	font-size: 24px;
+	text-decoration: bold;
+	margin-top: 15px;
+	margin-bottom:25px;
+	padding-bottom:10px;
+	border-bottom: 2px ridge;
+}
