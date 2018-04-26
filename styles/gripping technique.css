@@ -1,4 +1,4 @@
-	* {
+* {
 			padding:0;
 			border:0;
 			margin:0;
@@ -246,7 +246,7 @@
 #t2 {
 	text-align:center;
 	font-family: 'Noto Sans', sans-serif;
-	font-size:10vw;
+	font-size:7vw;
 	line-height: 150px;
 
  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -289,79 +289,14 @@ text-align:center;
 .centercontent{
 	margin-left: 15%;
 	margin-right: 15%;
-	font-family:'Proxima Nova', sans-serif;
-	font-size: 18px;
+	font-family: 'Asap', sans-serif;
+	font-size: 19px;
+	word-spacing: 5px;
 	line-height: 225%;
 }
 
 .centercontent h1{
-	font-family:'google fonts', sans-serif;
+	font-family: sans-serif;
 	word-spacing: 6px;
 	margin-top:20px;
-}
-
-#table{
-	font-family: 'Calibri', sans-serif;
-	font-size: 16px;
-	border-collapse: collapse;
-	width: 100%;
-}
-
-#table th{
-	padding: 10px;
-	background-color:#6699CC;
-}
-
-
-.date{
-	text-align: right;
-	vertical-align: center;
-	color: white;
-	font-family: 'google fonts', sans-serif;
-	font-size: 16px;
-}
-
-.commentno{
-	text-align: left;
-	vertical-align: center;
-	color: white;
-	font-family: 'google fonts', sans-serif;
-	font-size: 16px;
-}
-
-.userid{
-	font-family: 'Verdana',sans-serif;
-	font-size: 22px;
-	padding: 20px 10px;
-	text-decoration: bold;
-	text-align: center;
-	word-spacing: 120%; 
-	width: 20%;
-	background-color: rgba(221,221,221,0.65);
-}
-
-.userid img{
-	height: 200px;
-	width: 200px;
-	border: 1px solid;
-	border-radius: 5px;
-}
-.comment{
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-	padding: 2px 12px;
-	margin-bottom: 30px;
-	text-align: left;
-	vertical-align: top;
-
-}
-
-.comment h2{
-	font-family: 'Verdana', sans-serif;
-	font-size: 24px;
-	text-decoration: bold;
-	margin-top: 15px;
-	margin-bottom:25px;
-	padding-bottom:10px;
-	border-bottom: 2px ridge;
 }
