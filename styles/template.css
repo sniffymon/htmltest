@@ -10,9 +10,10 @@
 
 .navbar {
     overflow: hidden;
-    background-color: rgba(55, 71, 79, 0.9);
+    background-color: rgba(55, 71, 79, 1);
     font-family: Arial, Helvetica, sans-serif;
     display:inline-block;
+    width:100%;
 }
 
 .sticky {
@@ -200,6 +201,8 @@
 
 
 .footer {
+	display:table;
+	position:absolute;
 	height:40px;
 	background-color:#37474f;
 	color:white;
@@ -210,17 +213,18 @@
 }
 
 #footerright {
+	display:table-cell;
+	vertical-align:middle;
+	font-size:13px;
 	font-family:'Roboto', sans-serif;
-	padding-top:8px;
-	text-align:center;
+	padding-left:20px;
 }
 
 
 
 
 .titlebreaker {
-	size:50px;
-	padding: 60px 100px 25px 100px;
+	/*padding: 60px 100px 25px 100px;*/
 	margin:auto;
 	background-color:#111111;
 	background-image: url(headerbadmintongrass.png);
@@ -286,16 +290,26 @@ text-align:center;
 	display:inline-block;
 }
 
-.centercontent{
-	margin-left: 15%;
-	margin-right: 15%;
-	font-family:'Proxima Nova', sans-serif;
-	font-size: 18px;
-	line-height: 225%;
+.heading {
+	font-family:'Noto Sans', sans-serif;
+	font-weight:bold; 
+	padding-left: 40px;
+	color:#37474f;
+	border-bottom:1px solid #37474f;
+	display:inline-block;
+	text-shadow: 2px 0px #b2b2b2;
 }
 
-.centercontent h1{
-	font-family:'google fonts', sans-serif;
-	word-spacing: 6px;
-	margin-top:20px;
+body{
+	min-height:100%;
+	position:relative;
+}
+
+.paragraph {
+	font-family:'Roboto', sans-serif;
+	padding-left: 40px;
+	padding-right: 100px;
+	text-align:justify-all;
+	color:#1c1c1c;
+	display:inline-block;
 }
