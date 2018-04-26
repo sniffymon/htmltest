@@ -1,8 +1,8 @@
 * {
-			padding:0;
-			border:0;
-			margin:0;
-		}
+	padding:0;
+	border:0;
+	margin:0;
+	}
 
 
 		/* NAVBAR START */
@@ -202,7 +202,7 @@
 
 .footer {
 	display:table;
-	position:absolute;
+	position:relative;
 	height:40px;
 	background-color:#37474f;
 	color:white;
@@ -250,7 +250,7 @@
 #t2 {
 	text-align:center;
 	font-family: 'Noto Sans', sans-serif;
-	font-size:10vw;
+	font-size:7vw;
 	line-height: 150px;
 
  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -290,8 +290,16 @@ text-align:center;
 	display:inline-block;
 }
 
-.heading {
-	font-family:'Noto Sans', sans-serif;
+body{
+	min-height:100%;
+	position:relative;
+}
+
+.centercontent{
+	margin: 0% 15%;
+}
+.centercontent h1{
+	font-family:'Oxygen', sans-serif;
 	font-weight:bold; 
 	padding-left: 40px;
 	color:#37474f;
@@ -300,14 +308,26 @@ text-align:center;
 	text-shadow: 2px 0px #b2b2b2;
 }
 
-body{
-	min-height:100%;
-	position:relative;
+.centercontent h2{
+	font-family:'Noto Sans', sans-serif;
+	text-decoration: italic;
+	padding-left: 40px;
+	font-size:26px;
+	color:37474f;
+	text-shadow:1px 0px #b2b2b2;
 }
-
-.paragraph {
+.centercontent p {
 	font-family:'Roboto', sans-serif;
 	padding-left: 40px;
+	padding-right: 100px;
+	text-align:justify-all;
+	color:#1c1c1c;
+	display:inline-block;
+}
+
+.centercontent ul{
+	font-family:'Roboto', sans-serif;
+	padding-left: 100px;
 	padding-right: 100px;
 	text-align:justify-all;
 	color:#1c1c1c;
