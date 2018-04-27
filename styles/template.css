@@ -296,7 +296,10 @@ body{
 }
 
 .centercontent{
-	margin: 0% 15% 10%;
+	margin:0 auto;
+	padding-left:40px;
+	padding-right:100px;
+	max-width:994px;
 }
 .centercontent h1{
 	font-family:'Oxygen', sans-serif;
@@ -338,6 +341,11 @@ body{
 	margin-left: 250px;
 	border: 1px solid #BBB;
 	border-radius: 2px;
+}
+
+.centercontent iframe{
+	display:block;
+	margin:0 auto;
 }
 
 .imgloop img{
