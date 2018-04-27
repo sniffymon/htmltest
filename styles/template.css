@@ -297,14 +297,13 @@ body{
 
 .centercontent{
 	margin:0 auto;
-	padding-left:40px;
-	padding-right:100px;
-	max-width:994px;
+	padding-left:10%;
+	padding-right:8%;
+	max-width:890px;
 }
 .centercontent h1{
 	font-family:'Oxygen', sans-serif;
 	font-weight:bold; 
-	padding-left: 40px;
 	color:#37474f;
 	border-bottom:1px solid #37474f;
 	display:inline-block;
@@ -313,32 +312,25 @@ body{
 
 .centercontent h2{
 	font-family:'Oxygen', sans-serif;
-	padding-left: 40px;
 	font-size:22px;
 	color:37474f;
 }
 .centercontent p {
 	font-family:'Roboto', sans-serif;
-	padding-left: 40px;
-	padding-right: 100px;
-	text-align:justify-all;
 	color:#1c1c1c;
-	display:inline-block;
+	display:block;
 	line-height: 225%;
 }
 
 .centercontent ul{
 	font-family:'Roboto', sans-serif;
-	padding-left: 100px;
-	padding-right: 100px;
-	text-align:justify-all;
 	color:#1c1c1c;
 	display:inline-block;
 }
 
 .centercontent img{
 	display: block;
-	margin-left: 250px;
+	margin:0 auto;
 	border: 1px solid #BBB;
 	border-radius: 2px;
 }
