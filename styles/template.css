@@ -309,12 +309,10 @@ body{
 }
 
 .centercontent h2{
-	font-family:'Noto Sans', sans-serif;
-	text-decoration: italic;
+	font-family:'Oxygen', sans-serif;
 	padding-left: 40px;
-	font-size:26px;
+	font-size:22px;
 	color:37474f;
-	text-shadow:1px 0px #b2b2b2;
 }
 .centercontent p {
 	font-family:'Roboto', sans-serif;
@@ -336,10 +334,58 @@ body{
 }
 
 .centercontent img{
-	width: 350px;
-	height: 350px;
 	display: block;
 	margin-left: 250px;
 	border: 1px solid #BBB;
 	border-radius: 2px;
+}
+
+.imgloop img{
+	position:absolute;
+    animation-name: imgfade;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes imgfade{
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.img1 {
+    background-color: #37474f;
+    left:200px;
+    top: 1100px;
+    width: 350px;
+    height: 200px;
+}
+.img2 {
+    animation-delay: -2s;
+    background-color: #6699CC;
+    left:200px;
+    top: 1100px;
+    width: 350px;
+    height: 200px;
+}
+
+.img3{
+	animation-delay: -1s;
+	background-color: #37474f;
+    left:200px;
+    top: 1500px;
+    width: 350px;
+    height: 200px;
+}
+
+.img4{
+	animation-delay: -3s;
+    background-color: #6699CC;
+    left:200px;
+    top: 1500px;
+    width: 350px;
+    height: 200px;
 }
