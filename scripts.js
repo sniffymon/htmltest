@@ -1,4 +1,4 @@
-
+/* LOGIN FORM START*/
 
 
 	function loginPls() {
@@ -25,3 +25,20 @@ function headerBreak() {
 	textone.style.display = "block";
 	texttwo.style.display = "block";
 }
+
+/* LOGIN FORM END */
+
+
+/* RESPONSIVE NAV START */
+
+
+function respNav() {
+    var x = document.getElementById("xdrop");
+    if (x.className === "navbar sticky") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar sticky";
+    }
+}
+
+/* RESPONSIVE NAV END */
