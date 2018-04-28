@@ -34,11 +34,43 @@ function headerBreak() {
 
 function respNav() {
     var x = document.getElementById("xdrop");
-    if (x.className === "navbar sticky") {
+    if (x.className === "navbar sticky" || x.className === "navbar") {
         x.className += " responsive";
-    } else {
+    } else if (x.className === "navbar sticky responsive"){
         x.className = "navbar sticky";
+    } else if (x.className === "navbar responsive"){
+        x.className = "navbar";
     }
 }
 
 /* RESPONSIVE NAV END */
+
+/* SCROLL TO TOP START */
+
+window.onscroll = function() {scrollTrigger()};
+
+function scrollTrigger() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("btnScrollTop").style.display = "block";
+    } else {
+        document.getElementById("btnScrollTop").style.display = "none";
+    }
+
+}
+
+var intervalAmt = 0;
+
+function scrollStep() {
+    if (window.pageYOffset === 0) {
+        clearInterval(intervalAmt);
+    }
+    window.scroll(0, window.pageYOffset - 50);
+}
+
+function toTop() {
+    // Call the function toTop() every 5 milliseconds
+    intervalAmt = setInterval(scrollStep, 5);
+}
+
+
+/* SCROLL TO TOP END */

@@ -39,8 +39,9 @@
 
 </div>
 
-    <!-- NAVBAR START -->
-<div class="navbar">
+   <!-- NAVBAR START -->
+<div class="navbar" id="xdrop">  
+  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
   <a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
   <a href="index.html" class="selected">Home</a>
   <a href="#news">About</a>
@@ -77,7 +78,7 @@
       <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
-  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
+  <a href="javascript:void(0);" class="icon" onclick="respNav()">&#9776;</a>
 </div>
 <!-- NAVBAR END -->
  
@@ -130,6 +131,8 @@
  <p>Noted: There are no <b>BEST</b> ways for badminton footwork, you should move in a way you are comfortable with and keep practising.</p>
  <br><br>
 </div>
+
+<button onclick="javascript:toTop()" id="btnScrollTop" title="Go to top">&#9653;</button>
 
 
  <script type="text/javascript" language="javascript" src="scripts.js"></script>

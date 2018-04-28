@@ -5,12 +5,14 @@
 	}
 
 
-		/* NAVBAR START */
+/* NAVBAR START */
+
+
 
 
 .navbar {
     overflow: hidden;
-    background-color: rgba(55, 71, 79, 1);
+    background-color: #37474f;
     font-family: Arial, Helvetica, sans-serif;
     display:inline-block;
     width:100%;
@@ -21,6 +23,10 @@
 	width:100%;
 }
 
+.navbar .icon {
+    display: none;
+}
+
 .navbar a {
     float: left;
     font-size: 16px;
@@ -28,10 +34,8 @@
     text-align: center;
     padding: 15px 17px;
     text-decoration: none;
-    transition: background .25s ease-in-out;
-   -moz-transition: background .25s ease-in-out;
-   -webkit-transition: background .25s ease-in-out;
 }
+
 
 .dropdown {
     float: left;
@@ -58,7 +62,6 @@
 .dropdown-content {
     display: none;
     position: fixed;
-    -webkit-position:fixed;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -98,6 +101,37 @@
 #loginimg {
 	width:20px;
 	height:20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* NAVBAR END */
@@ -388,4 +422,35 @@ body{
     top: 1500px;
     width: 350px;
     height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+#btnScrollTop {
+    display: none; 
+    position: fixed; 
+    bottom: 50px; 
+    right: 70px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgba(55, 71, 79, 0.8); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    width:50px;
+    height:50px;
+}
+
+#btnScrollTop:hover {
+    background-color: rgb(55, 71, 79)
 }

@@ -39,19 +39,22 @@
 
 </div>
 
-  <!-- NAVBAR START -->
-<div class="navbar">
+   <!-- NAVBAR START -->
+<div class="navbar" id="xdrop">  
+  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
   <a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
-  <a href="#home">Home</a>
+  <a href="index.html" class="selected">Home</a>
   <a href="#news">About</a>
   <div class="dropdown">
     <button class="dropbtn">Beginner &#9662;
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Thingy 1<p style="float:right;">&#9657;</p></a>
-      <a href="#">Thingy 2<p style="float:right;">&#9657;</p></a>
-      <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
+      <a href="grippingtechnique.html">Gripping Technique<p style="float:right;">&#9657;</p></a>
+      <a href="serving.html">Serving<p style="float:right;">&#9657;</p></a>
+      <a href="footworkandpos.html">Footwork &amp; Positioning<p style="float:right;">&#9657;</p></a>
+      <a href="Netshot.html">Net Shots<p style="float:right;">&#9657;</p></a>
+      <a href="tap.html">Tap <p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
    <div class="dropdown">
@@ -59,9 +62,9 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Thingy 1<p style="float:right;">&#9657;</p></a>
-      <a href="#">Thingy 2<p style="float:right;">&#9657;</p></a>
-      <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
+      <a href="forehandsmash.html">Forehand Smash<p style="float:right;">&#9657;</p></a>
+      <a href="drive.html">Drive<p style="float:right;">&#9657;</p></a>
+      <a href="dropshot.html">Dropshot<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
    <div class="dropdown">
@@ -69,12 +72,13 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Thingy 1<p style="float:right;">&#9657;</p></a>
-      <a href="#">Thingy 2<p style="float:right;">&#9657;</p></a>
-      <a href="#">Thingy 3<p style="float:right;">&#9657;</p></a>
+      <a href="jumpingsmash.html">Jumping Smash<p style="float:right;">&#9657;</p></a>
+      <a href="backhandsmash.html">Backhand Smash<p style="float:right;">&#9657;</p></a>
+      <a href="overhead">Overhead Smash<p style="float:right;">&#9657;</p></a>
+      <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
-  <a href="" id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
+  <a href="javascript:void(0);" class="icon" onclick="respNav()">&#9776;</a>
 </div>
 <!-- NAVBAR END -->
  
@@ -121,6 +125,7 @@
  <br><br>
 </div>
 
+<button onclick="javascript:toTop()" id="btnScrollTop" title="Go to top">&#9653;</button>
 
  <script type="text/javascript" language="javascript" src="scripts.js"></script>
  <footer class="footer">

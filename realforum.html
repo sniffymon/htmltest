@@ -37,9 +37,9 @@
   </div>
 
 </div>
-
   <!-- NAVBAR START -->
-<div class="navbar">
+<div class="navbar" id="xdrop">  
+  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
   <a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
   <a href="index.html" class="selected">Home</a>
   <a href="#news">About</a>
@@ -76,7 +76,7 @@
       <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
-  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
+  <a href="javascript:void(0);" class="icon" onclick="respNav()">&#9776;</a>
 </div>
 <!-- NAVBAR END -->
  
@@ -139,6 +139,9 @@
 
   <div>
 </table>  
+
+<button onclick="javascript:toTop()" id="btnScrollTop" title="Go to top">&#9653;</button>
+
  <script type="text/javascript" language="javascript" src="scripts.js"></script>
 </body>
 <footer class="footer">
