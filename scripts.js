@@ -68,9 +68,28 @@ function scrollStep() {
 }
 
 function toTop() {
-    // Call the function toTop() every 5 milliseconds
+    // Call the function scrollStep() every 5 milliseconds
     intervalAmt = setInterval(scrollStep, 5);
 }
 
 
 /* SCROLL TO TOP END */
+
+
+/* SHOW PASSWORD START */
+
+document.getElementById("pcb").onclick = function() {showPass()}; 
+
+function showPass() {
+    var y = document.getElementById("passwordtxtpage");
+    var z = document.getElementById("confpasstxt");
+    if (y.type === "password") {
+        y.type = "text";
+        z.type = "text";
+    } else {
+        y.type = "password";
+        z.type = "password";
+    }
+}
+
+/* SHOW PASSWORD END */
