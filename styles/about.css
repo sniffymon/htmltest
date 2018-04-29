@@ -1,8 +1,13 @@
-		* {
+* {
 			padding:0;
 			border:0;
 			margin:0;
 		}
+
+		body{
+	min-height:100%;
+	position:relative;
+}
 
 		/* NAVBAR START */
 
@@ -135,88 +140,118 @@
 
 /* NAVBAR END */
 
-		.fullpage {
-			display:flex;
+		.bigcont {
+			display: table;
 			background-image: url("signupback.png");
-			height: 100%;
-			width:100%; 
-			background-size: cover;
+			height: 15%;
+			width:100%;
+			background-size:contain;
 			background-color: #cccccc;
 			padding: 50px 0 50px;
-			align-items:middle;
 
-		}
+			  /* parallax */
+    		background-attachment: fixed;
+    		background-position: right;
+    		background-repeat: no-repeat;
+   		 	background-size: cover;
+			}
 
-		.square {
-			background-color:rgba(217, 217, 217, 0.8);
-			width:500px;
-			height:430px;
-			margin:auto;
+		#bigconttext {
+			display:table-cell;
+			vertical-align:middle;
 			text-align:center;
-			align-items:middle;
-			border-radius: 10px;
-			
 		}
 
-		.square h1{
-			font-size:170%;
-			font-family:'Roboto', sans-serif;	
-			padding-top:30px;	
-			/*background-color:#496069;*/
-			padding-bottom:10px;
-			border-top-left-radius: 10px;
-			border-top-right-radius: 10px;
-			color:#496069;
-			margin:auto;
-			
-		}
-
-		h4 {
-			font-family:'Roboto', sans-serif;
-
-		}
-
-		.formitempage {
-			margin:auto;
+		#bigconttext h1{
+			font-size:10vw;
+		display:inline-block;
+			color: white;
 			font-family:'IBM Plex Mono', Monospace;
-			padding-top:10px;
+			text-shadow: 2px 2px 10px #000000;
 		}
 
-		#fullnametxt, #usernametxtpage, #passwordtxtpage, #emailtxt, #confpasstxt{
-			width:400px;
-			height:40px;
-			border-radius:5px;
-			font-size:120%;
-			color:#686868;
-			border:1px solid #bdbdbd;
-			margin-bottom:10px;
-			padding-left:10px;
+		#bigconttext p {
+			font-size:30px;
+			font-family:'IBM Plex Mono', Monospace;
+			color: white;
+		display:inline-block;
+			text-shadow: 2px 2px 5px #000000;
 		}
+
+
+		#bigconttext:after {
+    content: "";
+    width: 100%;
+    height: 80px;
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 19, 1);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0, 1));
+    background: -moz-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    background: -ms-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    background: -o-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    left:0;
+    z-index: 10;
+}
+
+
+
+
+
+
+		.breaker {
+			background-color:#000000;
+			size:30px;
+			padding: 100px 80px;
+		}
+
+		#breakertext {
+			text-align:left;
+				color:white;
+		}
+
+		#breakertext h1{
+			border-bottom:1px solid #fff;
+		}
+
+		#breakertext p {
+			font-family:'Roboto', sans-serif;
 		
-		#btnsignup {
-			border-radius:2px;
-			font-size:20px;
-			background-color:#496069;
-			padding:10px;
-			text-align:center;
-			border: 1px solid transparent;
-			width:400px;
 		}
 
-		#btnsignup a {
+
+		#login {
+			width:25px;
+			padding-top:13px;
+		}
+
+		.btnsignup {
+			padding: 10px;
+			font-size: 20px;
+			border-radius:4px;
+			background-color:#d9534f;
+			text-align: center;
+			border: 1px solid transparent;
+
+		}
+
+		.btnsignup a {
 			text-decoration: none;
 			color: #fff;
 		}
 
-		#btnsignup:hover {
-			background-color: #253220;
+		.btnsignup:hover {
+			background-color:#c9302c;
 		}
+
+
+
 
 
 
 		/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: none ; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -226,6 +261,7 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   	padding-top:17%;
+  	margin:0 auto;
 }
 
 	.squarefloat {
@@ -310,10 +346,15 @@
 		padding-left:10px;
 }
 
+
 .footer {
 	height:40px;
 	background-color:#37474f;
 	color:white;
+	bottom:0;
+	margin-bottom:0;
+	position:absolute;
+	width:100%;
 }
 
 #footerright {
