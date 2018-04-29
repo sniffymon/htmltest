@@ -350,24 +350,8 @@ text-align:center;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-.pagebtn {	
-    background-color: #666; /* Green */
-    border: 1px solid;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 10px;
-    cursor: pointer;
-    padding: 16px;
-}
 
-.currentpage{
-	background-color: #FF8C00;
-}
-
-.pagebtn:hover{
-	background-color: #FF8C00;	
+.pagination{
+	text-align: center;
+	padding: 30px 0px;
 }
