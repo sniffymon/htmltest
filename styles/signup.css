@@ -3,8 +3,9 @@
 			border:0;
 			margin:0;
 		}
-
 		/* NAVBAR START */
+
+
 
 
 .navbar {
@@ -12,6 +13,7 @@
     background-color: #37474f;
     font-family: Arial, Helvetica, sans-serif;
     display:inline-block;
+    width:100%;
 }
 
 .sticky {
@@ -19,14 +21,19 @@
 	width:100%;
 }
 
+.navbar .icon {
+    display: none;
+}
+
 .navbar a {
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 17px;
     text-decoration: none;
 }
+
 
 .dropdown {
     float: left;
@@ -47,7 +54,7 @@
 .navbar a:hover, .dropdown:hover .dropbtn{
     background-color: #fff;
     color: #000;
-    z-index:1;
+  	z-index:1;
 }
 
 .dropdown-content {
@@ -94,6 +101,37 @@
 	height:20px;
 }
 
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* NAVBAR END */
 
 		.fullpage {
@@ -111,7 +149,7 @@
 		.square {
 			background-color:rgba(217, 217, 217, 0.8);
 			width:500px;
-			height:430px;
+			height:500px;
 			margin:auto;
 			text-align:center;
 			align-items:middle;

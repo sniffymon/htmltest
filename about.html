@@ -1,12 +1,21 @@
 <html>
 	<head>
-		<title>BadmintonGeek -  Sign Up</title>
+		<link rel="stylesheet" type="text/css"	href="styles/about.css">
+		<link rel="icon" href="Styles/favicon.ico" type="image/x-icon">
+		<title>BadmintonGeek</title>
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style type="text/css">
+			body {
+				background-color:#000;
+			}
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="styles/signup.css">
 	</head>
-	<body>
+
+
+<body>
+
 <!-- Form Float -->
 <div id="id01" class="modal">
 
@@ -15,7 +24,6 @@
 	<img id="loginlogo" src="styles/testlogo.jpg" alt="">
 	
 		<table class="formitem">
-		
 			<tr>
 				<td>
 					<input type="text" id="usernametxt" placeholder="Username or Email">
@@ -32,16 +40,16 @@
 			</tr>
 	</table>
 
+
 			<button id="btnlogin"><a href="">Login</a></button>
 	</div>
 
 </div>
 
-
-  <!-- NAVBAR START -->
+	<!-- NAVBAR START -->
 <div class="navbar sticky" id="xdrop">  
-  <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
-  <a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
+	<a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
+	<a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
   <a href="index.html" class="selected">Home</a>
   <a href="about.html">About</a>
   <div class="dropdown">
@@ -74,68 +82,36 @@
     <div class="dropdown-content">
       <a href="jumpingsmash.html">Jumping Smash<p style="float:right;">&#9657;</p></a>
       <a href="backhandsmash.html">Backhand Smash<p style="float:right;">&#9657;</p></a>
-      <a href="Overheadsmash.html">Overhead Smash<p style="float:right;">&#9657;</p></a>      
-      <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
+      <a href="Overheadsmash.html">Overhead Smash<p style="float:right;">&#9657;</p></a>      <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
-  <a href="forum.html">Forums</a>
+    <a href="forum.html">Forums</a>
   <a href="javascript:void(0);" class="icon" onclick="respNav()">&#9776;</a>
 </div>
 <!-- NAVBAR END -->
 
-
-
-<div class="fullpage">
-	<div class="square">
-		<h1>Join BadmintonGeek Today</h1>
-
-		<table class="formitempage">
-			<tr>
-				<td>
-					<input type="text" id="fullnametxt" placeholder="Fullname">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="text" id="usernametxtpage" placeholder="Username">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="Email" id="emailtxt" placeholder="Email">
-				</td>
-			</tr>
-			<tr>
-				<td align="center" style="padding-bottom:10px">
-					<input type="radio" name="gender" value="male" checked>  <p style="display:inline; font-family:'Roboto', sans-serif; font-size:15px;">Male</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="radio" name="gender" value="female">  <p style="display:inline; font-family:'Roboto', sans-serif; font-size:15px;">Female</p>
-					<br>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<input type="password" id="passwordtxtpage" placeholder="Password">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="password" id="confpasstxt" placeholder="Confirm Password">
-				</td>
-			</tr>
-			<tr>
-				<td align="center">
-					<input type="checkbox" id="pcb" onclick="javascript:showPass(); return false;"> <p style="display:inline; font-family:'Roboto', sans-serif; font-size:15px;">Show Password</p>
-				</td>
-			</tr>		
-	</table><br>
-
-			<button id="btnsignup"><a href="">Sign Up</a></button>
+<div class="bigcont">
+	<div id="bigconttext">
+	<h1>BadmintonGeek.</h1><br>
 	</div>
 </div>
+
+<div class="breaker">
+	<div>
+		<div id="breakertext">
+			<h1 style="font-family:'Roboto', sans-serif;"> WHO ARE WE? </h1><br>
+			<p>BadmintonGeek is an online forum and tutorial community mainly focused on the sport of badminton.</p><br>
+			<p><strong>DISCLAIMER </strong>: This is only a website made for an assignment, all information and images used are by no means used for commercial purposes. The website will be taken down immediately after the module presentation.</p><br><br>
+			<h1 style="font-family:'Roboto', sans-serif;"> WHAT DO WE DO? </h1><br>
+			<p>We provide a safehaven and training grounds for the discussion of everyone, no matter whom. Professional or Beginner. We do our best to provide a truly helpful and useful community of members, moderators and admins.</p><br><br>
+			<h1 style="font-family:'Roboto', sans-serif;"> WHAT IS OUR MISSION? </h1><br>
+			<p>Our mission is to bring utter knowledge to everyone about the sport of badminton. The goal is to inform, whether that be to improve or to teach, as long as there is any information regarding the sport. We will strive to bring the information to the community of BadmintonGeek so that they may continuously play the game or learn the game in the most comfortable yet advanced way possible.</p>
+	</div>
+</div>
+</div>
 	<script type="text/javascript" language="javascript" src="scripts.js"></script>
-	</body>
 	<footer class="footer">
 	<p id="footerright">&#9824;2018 - Badminton Geek</p>
 </footer>
+</body>
 </html>
