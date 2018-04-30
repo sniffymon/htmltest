@@ -75,14 +75,12 @@ function toTop() {
 
 /* SCROLL TO TOP END */
 
-<<<<<<< HEAD
 function Alert(){
     var signup = confirm("Please login or signup to post a forum topic.");
     if (signup == true){
         loginPls();
     }
 }
-=======
 
 /* SHOW PASSWORD START */
 
@@ -101,4 +99,3 @@ function showPass() {
 }
 
 /* SHOW PASSWORD END */
->>>>>>> 25d865416e3942d888fcbd7e323d4d09063a1ff3
