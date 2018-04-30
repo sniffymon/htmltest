@@ -1,11 +1,15 @@
 * {
-	padding:0;
-	border:0;
-	margin:0;
-	}
+			padding:0;
+			border:0;
+			margin:0;
+		}
 
+		body{
+	min-height:100%;
+	position:relative;
+}
 
-/* NAVBAR START */
+		/* NAVBAR START */
 
 
 
@@ -136,10 +140,118 @@
 
 /* NAVBAR END */
 
+		.bigcont {
+			display: table;
+			background-image: url("signupback.png");
+			height: 15%;
+			width:100%;
+			background-size:contain;
+			background-color: #cccccc;
+			padding: 50px 0 50px;
+
+			  /* parallax */
+    		background-attachment: fixed;
+    		background-position: right;
+    		background-repeat: no-repeat;
+   		 	background-size: cover;
+			}
+
+		#bigconttext {
+			display:table-cell;
+			vertical-align:middle;
+			text-align:center;
+		}
+
+		#bigconttext h1{
+			font-size:10vw;
+		display:inline-block;
+			color: white;
+			font-family:'IBM Plex Mono', Monospace;
+			text-shadow: 2px 2px 10px #000000;
+		}
+
+		#bigconttext p {
+			font-size:30px;
+			font-family:'IBM Plex Mono', Monospace;
+			color: white;
+		display:inline-block;
+			text-shadow: 2px 2px 5px #000000;
+		}
+
+
+		#bigconttext:after {
+    content: "";
+    width: 100%;
+    height: 80px;
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 19, 1);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0, 1));
+    background: -moz-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    background: -ms-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    background: -o-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, 1));
+    left:0;
+    z-index: 10;
+}
+
+
+
+
+
+
+		.breaker {
+			background-color:#000000;
+			size:30px;
+			padding: 100px 80px;
+		}
+
+		#breakertext {
+			text-align:left;
+				color:white;
+		}
+
+		#breakertext h1{
+			border-bottom:1px solid #fff;
+		}
+
+		#breakertext p {
+			font-family:'Roboto', sans-serif;
+		
+		}
+
+
+		#login {
+			width:25px;
+			padding-top:13px;
+		}
+
+		.btnsignup {
+			padding: 10px;
+			font-size: 20px;
+			border-radius:4px;
+			background-color:#d9534f;
+			text-align: center;
+			border: 1px solid transparent;
+
+		}
+
+		.btnsignup a {
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.btnsignup:hover {
+			background-color:#c9302c;
+		}
+
+
+
+
+
 
 		/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: none ; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -149,6 +261,7 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   	padding-top:17%;
+  	margin:0 auto;
 }
 
 	.squarefloat {
@@ -235,230 +348,17 @@
 
 
 .footer {
-	display:table;
-	position:relative;
 	height:40px;
 	background-color:#37474f;
 	color:white;
 	bottom:0;
 	margin-bottom:0;
+	position:absolute;
 	width:100%;
-
 }
 
 #footerright {
-	display:table-cell;
-	vertical-align:middle;
-	font-size:13px;
 	font-family:'Roboto', sans-serif;
-	padding-left:20px;
-}
-
-
-
-
-.titlebreaker {
-	/*padding: 60px 100px 25px 100px;*/
-	margin:auto;
-	background-color:#111111;
-	background-image: url(headerbadmintongrass.png);
-	background-position: bottom;
-}
-
-
-.clip-text {
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-
-
-	background-position: right;
-	background-image: url(newpic.jpg);
-
-	font-family: 'Noto Sans', sans-serif;
-	font-size:10vw;
-
-
-}
-
-
-#t2 {
+	padding-top:8px;
 	text-align:center;
-	font-family: 'Noto Sans', sans-serif;
-	font-size:7vw;
-	line-height: 150px;
-
- -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
-  
-}
-
-#t1 {
-text-align:center;
-	font-family: 'Noto Sans', sans-serif;
-	font-size:5vw;
-
-
- -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
-}
-
-@keyframes fadein {
-	from  {opacity:0;}
-	to {opacity:1;}
-}
-
-.line {
-	background-color:#37474f;
-	height:10px;
-}
-
-.contentcontainer {
-	background-color:white;
-	height:70%;
-	display:inline-block;
-}
-
-body{
-	min-height:100%;
-	position:relative;
-}
-
-.centercontent{
-	margin:0 auto;
-	padding-left:10%;
-	padding-right:8%;
-	max-width:890px;
-}
-.centercontent h1{
-	font-family:'Oxygen', sans-serif;
-	font-weight:bold; 
-	color:#37474f;
-	border-bottom:1px solid #37474f;
-	display:inline-block;
-	text-shadow: 2px 0px #b2b2b2;
-}
-
-.centercontent h2{
-	font-family:'Oxygen', sans-serif;
-	font-size:22px;
-	color:37474f;
-}
-.centercontent p {
-	font-family:'Roboto', sans-serif;
-	color:#1c1c1c;
-	display:block;
-	line-height: 225%;
-}
-
-.centercontent ul{
-	font-family:'Roboto', sans-serif;
-	color:#1c1c1c;
-	display:inline-block;
-}
-
-.centercontent img{
-	display: block;
-	margin:0 auto;
-	border: 1px solid #BBB;
-	border-radius: 2px;
-}
-
-.centercontent iframe{
-	display:block;
-	margin:0 auto;
-}
-
-
-#btnScrollTop {
-    display: none; 
-    position: fixed; 
-    bottom: 50px; 
-    right: 70px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: rgba(55, 71, 79, 0.8); 
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-size: 18px; 
-    width:50px;
-    height:50px;
-}
-
-#btnScrollTop:hover {
-    background-color: rgb(55, 71, 79)
-}
-
-#Forum {
-    font-family: 'Calibri', sans-serif;
-    font-size: 20px;
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: auto;
-}
-
-.Forum td, .Forum th {
-    border:solid #ddd;
-    height: 20px;
-    padding: 8px;
-    border-radius: 2px;
-}
-
-#Forum tr:nth-child(even){background-color: #DDD;}
-
-#Forum tr:hover {
-	background-color: #BBB;
-	font-family: 'Noto Sans', sans-serif;
-	text-decoration: underline;
-	cursor: pointer;
-
-}
-
-#Forum th {
-    padding-top: 5px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #37474f;
-    color: white;
-    font-size: 26px;
-    pointer-events: none;
-}
-
-#Forum td{
-	max-width: 600px;
-}
-
-.question {
-	padding: 15px 60px;
-	margin-bottom: 30px;
-	border: 2px ridge #ddd;
-	border-radius: 5px;
-	box-shadow: 3px 3px	#aaa;
-	background-color: #006994;
-	color:white;
-	font-family: 'Oxygen', sans-serif;
-	font-size: 20px;
-	float:left;
-}
-
-.forumtopic{
-	text-align: right;
-	padding-top: 40px;
-	padding-bottom: 20px;
-	font-family: 'Asap', sans-serif;
-	font-size: 20px;
-}
-
-.blankrow{
-	height: 25px ;
-	background-color: white;
-	pointer-events: none;
 }

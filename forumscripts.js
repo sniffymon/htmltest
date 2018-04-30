@@ -123,7 +123,7 @@ function changePage($page)
         $rowdisplay += $tr[$trindex];
     }
     $Forum.innerHTML = $rowdisplay;
-    $page_span.innerHTML = 	"page:"+ $page + "/" + numPages();
+    $page_span.innerHTML = 	"Page:"+ $page + "/" + numPages();
 
    if ($page == 1) {
         $prevbutton.style.cssText = 'background-color: #dddddd; color: #000; border: none; cursor: default;text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 30px 10px; padding: 16px;';

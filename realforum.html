@@ -18,20 +18,22 @@
   <!-- Form Content -->
 <div class="squarefloat animate">
   <img id="loginlogo" src="styles/testlogo.jpg" alt="">
-  
-    <table class="formitem">
-      <tr>
-        <td>
-          <input type="text" id="usernametxt" placeholder="Username or Email">
-        </td>
-      </tr>
-      <tr>
-      <tr>
-        <td>
-          <input type="password" id="passwordtxt" placeholder="Password">
-        </td>
-      </tr> 
-  </table>
+  <table class="formitem">
+			<tr>
+				<td>
+					<input type="text" id="usernametxt" placeholder="Username or Email">
+				</td>
+			</tr>
+			<tr>
+			<tr>
+				<td>
+					<input type="password" id="passwordtxt" placeholder="Password">
+				</td>
+			</tr>	
+			<tr>
+				<td align="center"><a href="signup.html" style="font-size:14px; text-decoration:none; font-family:'Roboto', sans-serif; color:#37474f;">Sign Up Now</a></td>
+			</tr>
+	</table>
 
       <button id="btnlogin"><a href="">Login</a></button>
   </div>
@@ -42,7 +44,7 @@
   <a id="navbar-func" onclick="javascript:loginPls(); return false;"><img src="styles/login.png" alt="" id="loginimg"></a>
   <a id="overlay" href="index.html"><img src="styles/testlogo.png" alt="logo" id="logoimg"></a>
   <a href="index.html" class="selected">Home</a>
-  <a href="#news">About</a>
+  <a href="about.html">About</a>
   <div class="dropdown">
     <button class="dropbtn">Beginner &#9662;
       <i class="fa fa-caret-down"></i>
@@ -73,9 +75,11 @@
     <div class="dropdown-content">
       <a href="jumpingsmash.html">Jumping Smash<p style="float:right;">&#9657;</p></a>
       <a href="backhandsmash.html">Backhand Smash<p style="float:right;">&#9657;</p></a>
-      <a href="overheadsmash.html">Overhead Smash<p style="float:right;">&#9657;</p></a>      <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
+      <a href="Overheadsmash.html">Overhead Smash<p style="float:right;">&#9657;</p></a>      
+      <a href="defending.html">Defending Technique<p style="float:right;">&#9657;</p></a>
     </div>
   </div> 
+  <a href="forum.html">Forums</a>
   <a href="javascript:void(0);" class="icon" onclick="respNav()">&#9776;</a>
 </div>
 <!-- NAVBAR END -->
@@ -91,12 +95,10 @@
 </div>
 <div class="line"></div><br><br>
 <table id="table">
-  <div class="question">
   <tr>
     <th class="commentno"> #001 </th>
     <th class="date">3.30 AM 25-7-2012</th>  
   </tr>
-</div>
   <tr>
     <td class="userid">
      <img src="styles/justinbieber.jpg" alt="justinbieber"><br><br>
@@ -135,16 +137,16 @@
       <p>WOW, looks fun. Thanks &#10084;. </p>
      </td>
   </tr>
-
-
-  <div>
 </table>  
-
+<div class="tableline"></div>
+<div class="center"><button class="question" onclick="javascript:Alert()" >Leave a comment</button></div>
 <button onclick="javascript:toTop()" id="btnScrollTop" title="Go to top">&#9653;</button>
+
+
 
  <script type="text/javascript" language="javascript" src="scripts.js"></script>
 </body>
-<footer class="footer">
+<footer class="footer"> 
   <p id="footerright">&#9824;2018 - Badminton Geek</p>
 </footer>
 </html>
