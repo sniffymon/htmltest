@@ -87,8 +87,6 @@ function Alert(){
 
 /* SHOW PASSWORD START */
 
-document.getElementById("pcb").onclick = function() {showPass()}; 
-
 function showPass() {
     var y = document.getElementById("passwordtxtpage");
     var z = document.getElementById("confpasstxt");
@@ -103,7 +101,8 @@ function showPass() {
 
 /* SHOW PASSWORD END */
 
-/* PAGINATION START*/
+
+//pagination
 
 var $current_page = 1;
 var $rowsperpage = 20;
@@ -172,5 +171,3 @@ window.onload = function() {
     changePage(1);
 }
 };
-
-/* PAGINATION END */
